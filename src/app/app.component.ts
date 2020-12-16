@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MovieServiceService } from './services/movie-service.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'movieHunter';
+  public movies = [];
+
+  
+  constructor(private movieService: MovieServiceService) {}
+
+  ngOnInit() {
+    this.movieService.getMovie("spider man")
+      .subscribe(data => this.movies = data);
+
+    console.log(this.movies);
+  }
+  
+
+  
+  
+
+
 }
