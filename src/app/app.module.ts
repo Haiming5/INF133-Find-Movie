@@ -7,6 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselCardComponent } from './carousel-card/carousel-card.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MovieComponent } from './movie/movie.component';
 
 
 @NgModule({
@@ -14,14 +16,16 @@ import { MovieListComponent } from './movie-list/movie-list.component';
     AppComponent,
     CarouselComponent,
     CarouselCardComponent,
-    MovieListComponent
+    MovieListComponent,
+    MovieComponent
     
   ],
   imports: [
     BrowserModule,
     // import HttpClientModule. Check the link above for more info.
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

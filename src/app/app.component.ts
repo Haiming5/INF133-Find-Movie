@@ -20,6 +20,7 @@ export class AppComponent {
 
   search() {
     this.movieService.getMovie(this.searchQuery).subscribe(data => this.movies = data["results"]);
+                                                                              
     console.log("movies: ");
     console.log(this.movies);
   }
