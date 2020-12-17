@@ -1,9 +1,10 @@
-export interface Movie {
-    name: string;
+export class Movie {
+    title: string;
     id: number;
-    poster: string; 
-    releaseDate: string; 
+    poster_path: string; 
+    release_date: string; 
     rating: number; 
-    backgroundStory: string; 
+    overview: string; 
+    vote_average: number; 
 
 }

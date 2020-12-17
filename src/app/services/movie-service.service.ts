@@ -3,7 +3,7 @@
 
 import { Injectable } from '@angular/core';
 // import HttpClient so MovieServiceService can use it.
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 // import Observable, since that is what HttpClient returns, https://angular.io/guide/http for more info.
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
@@ -16,27 +16,22 @@ import { Movie } from '../models/movie';
   providedIn: 'root'
 })
 export class MovieServiceService {
-  // basicUrl: String = "https://api.themoviedb.org/3/";
-  // baseUrl: string = "http://localhost:4200/";
-  constructor(private http: HttpClient) { }
+  baseURL:string = "https://api.themoviedb.org/3";
+  constructor(private http: HttpClient) {}
+
+
 
   // Call search Url to get a movie
-  getMovie(movieName:string) {
+  getMovie(movieName:string):Observable<Movie[]> {
     movieName = encodeURIComponent(movieName);
-    var searchUrl:string = `https://api.themoviedb.org/3/search/movie?api_key={put_api_key_here}&language=en-US&query=${movieName}&page=1&include_adult=false`;
-    return this.http.get<Movie>(searchUrl);
+    let searchUrl:string = `/search/movie?api_key=0a1ed8f16ba545aa32cf042f2f90ce59&language=en-US&query=${movieName}&page=1&include_adult=false`;
+    return this.http.get<Movie[]>(this.baseURL+searchUrl);
   }
 
 
-  getLatestMovie() {
-    var latestMovieURL:string = "https://api.themoviedb.org/3/movie/latest?api_key={put_api_key_here}&language=en-US";
-    return this.http.get(latestMovieURL);
-  }
-
-
-  // getPoster(movieId:string) {
-
-
+  // getLatestMovie() {
+  //   var latestMovieURL:string = "https://api.themoviedb.org/3/movie/latest?api_key={put_api_key_here}&language=en-US";
+  //   return this.http.get(latestMovieURL);
   // }
 
   

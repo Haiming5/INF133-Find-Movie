@@ -6,13 +6,15 @@ import { HttpClientModule } from '@angular/common/http'; // check out https://an
 import { FormsModule } from '@angular/forms';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselCardComponent } from './carousel-card/carousel-card.component';
+import { MovieListComponent } from './movie-list/movie-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CarouselComponent,
-    CarouselCardComponent
+    CarouselCardComponent,
+    MovieListComponent
     
   ],
   imports: [
