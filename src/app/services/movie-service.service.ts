@@ -16,18 +16,29 @@ import { Movie } from '../models/movie';
   providedIn: 'root'
 })
 export class MovieServiceService {
-  basicUrl: String = "https://api.themoviedb.org/3/";
+  // basicUrl: String = "https://api.themoviedb.org/3/";
   // baseUrl: string = "http://localhost:4200/";
-  // apiKey: string = "0a1ed8f16ba545aa32cf042f2f90ce59";
-  // searchUrl: string = `https://api.themoviedb.org/3/search/movie?api_key=${this.apiKey}&language=en-US&query=${movieName}&page=1&include_adult=false`;
-
+  // searchUrl: string = 'https://api.themoviedb.org/3/search/movie?api_key=0a1ed8f16ba545aa32cf042f2f90ce59&language=en-US&query=spider&page=1&include_adult=false';
   constructor(private http: HttpClient) { }
 
   // Call search Url to get a movie
-  getMovie(movieName: string) {
-    var searchUrl = `search/movie?api_key=0a1ed8f16ba545aa32cf042f2f90ce59&language=en-US&query=${movieName}&page=1&include_adult=false`;
-    return this.http.get<Movie[]>(searchUrl);
+  getMovie(movieName:string) {
+    movieName = encodeURIComponent(movieName);
+    var searchUrl:string = `https://api.themoviedb.org/3/search/movie?api_key=0a1ed8f16ba545aa32cf042f2f90ce59&language=en-US&query=${movieName}&page=1&include_adult=false`;
+    return this.http.get<Movie>(searchUrl);
   }
+
+
+  getLatestMovie() {
+    var latestMovieURL:string = "https://api.themoviedb.org/3/movie/latest?api_key=0a1ed8f16ba545aa32cf042f2f90ce59&language=en-US";
+    return this.http.get(latestMovieURL);
+  }
+
+
+  // getPoster(movieId:string) {
+
+
+  // }
 
   
 
