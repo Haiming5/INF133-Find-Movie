@@ -1,22 +1,17 @@
 
 <div>
     <form>
-        <input [(ngModel)]="searchQuery" type="text" placeholder="Search" name="name">
-        
+        <input [(ngModel)]="searchQuery" type="text" placeholder="Search for a movie" name="name" id="searchWidth">
     </form>
-    <button type="button" class="btn btn-primary" (click)="search()">Search</button>
-    <!-- [movie]="movie" routerLink="/specificMovie" -->
-    <app-movie-list-helper *ngFor="let movie of movies" [movie]="movie"></app-movie-list-helper>
-    
-    <!-- <a *ngFor="let movie of movies" [movie]="movie" > -->
-        <!-- <h3>
-            {{movie.title}} {{movie.vote_average}}/10
-        </h3>
-        <img [src]="imageBaseURL + movie.poster_path">
-        <button type="button" class="btn btn-info" (click)="checkOutMovie()">More Info</button> -->
-    <!-- </a> -->
 </div>
 
+<div>
+    <button type="button" class="btn btn-primary" (click)="search()">Search</button>
+</div>
+
+<div>
+    <app-movie-list-helper *ngFor="let movie of movies" [movie]="movie"></app-movie-list-helper>
+</div>
 
 <!-- <div>
     <nav>

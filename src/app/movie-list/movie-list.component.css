@@ -1,0 +1,11 @@
+#searchWidth
+{
+    height: 2.5em;
+    width: 50%;
+    padding-right: 2em;
+    padding-left: 2em;
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+    margin: 5em 15em 10em 15em;
+}

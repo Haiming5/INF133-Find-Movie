@@ -1,11 +1,16 @@
 <div>
-    <h3>{{movie.title}}</h3>
-    
-    <h6>{{movie.overview}}</h6>
+    <h1 id="centerText"> {{movie.title}} </h1>
+</div>
+
+<div id="margin">
+    <h2> Movie Overview </h2>
+    <p> {{movie.overview}} </p>
+
+    <h2> Movie Rating:</h2>
     <button (click)="posters()">Show Poster</button>
+    <br>
     <img *ngIf="showPic" [src]="completeURL">
     
     <!-- <img [src]="imageBaseURL + movie.poster_path"> -->
-
 </div>
 
