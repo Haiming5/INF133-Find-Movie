@@ -1,0 +1,15 @@
+
+.logo {
+    /* font-family: 'Russo One', sans-serif; */
+    font-family: 'Changa', sans-serif;
+    font-size: 50px;
+}
+
+a {
+    color: rgb(196, 176, 0);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color:rgb(109, 109, 109)
+  }
