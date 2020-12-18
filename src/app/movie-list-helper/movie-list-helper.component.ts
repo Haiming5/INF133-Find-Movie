@@ -19,8 +19,6 @@ export class MovieListHelperComponent implements OnInit {
   ngOnInit(): void {}
 
   checkOutMovie(){
-    // console.log("checkoutmovie() clicked");
-    // console.log(this.movies);
     console.log(this.movie);
     this.router.navigate(['specificMovie']);
     this.movieService.chosenMovie = this.movie;

@@ -15,7 +15,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   bootstrap: [ AppComponent ],
-  // declarations: [ AppComponent, SpecificMovieComponent ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

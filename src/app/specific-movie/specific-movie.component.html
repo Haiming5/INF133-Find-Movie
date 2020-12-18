@@ -3,9 +3,8 @@
     
     <h6>{{movie.overview}}</h6>
     <button (click)="posters()">Show Poster</button>
+    <p>(Might need to press twice to show the picture)</p>
+    <p>(When press multiple times, pictures will be changed)</p>
     <img *ngIf="showPic" [src]="completeURL">
-    
-    <!-- <img [src]="imageBaseURL + movie.poster_path"> -->
-
 </div>
 
