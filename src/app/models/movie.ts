@@ -1,3 +1,4 @@
+// class that holds variables with info we need to showcase
 export class Movie {
     title: string;
     id: number;

@@ -1,3 +1,4 @@
+//  allows user to navigate to see movie information
 import { Component, Input, OnInit } from '@angular/core';
 import { Movie } from '../models/movie';
 import { Router } from '@angular/router';

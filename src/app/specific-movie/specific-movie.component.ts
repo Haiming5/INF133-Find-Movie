@@ -1,3 +1,5 @@
+// retrieves backdrops for specified moview (the posters)
+
 import { Component, Input, OnInit } from '@angular/core';
 import { Movie } from '../models/movie';
 import { MovieServiceService } from '../services/movie-service.service';

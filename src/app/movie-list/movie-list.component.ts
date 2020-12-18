@@ -1,3 +1,4 @@
+// allows us to iterate through movie results and showcase them
 import { Component, Input, OnInit } from '@angular/core';
 import { Movie } from '../models/movie';
 import { Router } from '@angular/router';

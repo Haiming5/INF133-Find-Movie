@@ -1,3 +1,5 @@
+// code that gets the specified movie and movie poster
+
 import { Injectable } from '@angular/core';
 // import HttpClient so MovieServiceService can use it.
 import { HttpClient, HttpHeaders } from '@angular/common/http';
