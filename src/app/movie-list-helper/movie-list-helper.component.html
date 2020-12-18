@@ -1,8 +1,12 @@
- <!--HTML page that allows user to navigate to see movie information  -->
-<div>
-    <h3>
+    
+<div id="spacing">
+    <h3 id="titleSize">
         {{movie.title}}
     </h3>
-    <img [src]="imageBaseURL + movie.poster_path">
+
+    <img [src]="imageBaseURL + movie.poster_path" width="300em" alt="Movie poster of {{movie.title}}">
+    
+    <br>
+
     <button type="button" class="btn btn-info" (click)="checkOutMovie()">More Info</button>
 </div>    
