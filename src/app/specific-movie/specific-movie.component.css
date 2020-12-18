@@ -1,6 +1,12 @@
+body
+{
+    font-family: 'Alike';
+}
+
 #centerText
 {
     text-align: center;
+    font-size: 4em;
 }
 
 #margin
