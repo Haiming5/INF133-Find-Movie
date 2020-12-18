@@ -8,7 +8,11 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselCardComponent } from './carousel-card/carousel-card.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { AppRoutingModule } from './app-routing.module';
-import { MovieComponent } from './movie/movie.component';
+import { SpecificMovieComponent } from './specific-movie/specific-movie.component';
+import { RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MovieListHelperComponent } from './movie-list-helper/movie-list-helper.component';
+
 
 
 @NgModule({
@@ -17,7 +21,9 @@ import { MovieComponent } from './movie/movie.component';
     CarouselComponent,
     CarouselCardComponent,
     MovieListComponent,
-    MovieComponent
+    SpecificMovieComponent,
+    PageNotFoundComponent,
+    MovieListHelperComponent
     
   ],
   imports: [

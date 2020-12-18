@@ -1,0 +1,11 @@
+<div>
+    <h3>{{movie.title}}</h3>
+    
+    <h6>{{movie.overview}}</h6>
+    <button (click)="posters()">Show Poster</button>
+    <img *ngIf="showPic" [src]="completeURL">
+    
+    <!-- <img [src]="imageBaseURL + movie.poster_path"> -->
+
+</div>
+
