@@ -7,5 +7,19 @@
     border-style: solid;
     border-width: medium;
     border-color: black;
-    margin: 5em 15em 3em 15em;
+    /* margin: 5em 15em 10em 15em; */
+}
+
+div.flex {
+    display: flex;
+    /* border: 1px solid black; */
+    margin: 5px;
+    /* margin: 5em 15em 10em 15em; */
+    padding: 5px;
+    align-content: center;
+}
+
+body {
+    background-image: url("../../assets/img/background2.png");
+    /* background-color: #cccccc; */
 }
