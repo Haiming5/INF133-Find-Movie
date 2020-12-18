@@ -5,6 +5,10 @@
     font-size: 50px;
 }
 
+.flex {
+    display: flex;
+}
+
 a {
     color: rgb(196, 176, 0);
     text-decoration: none;
