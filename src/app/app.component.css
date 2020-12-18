@@ -13,3 +13,8 @@ a {
   a:hover {
     color:rgb(109, 109, 109)
   }
+
+  body {
+    background-image: url("../assets/img/background2.png");
+    /* background-color: #cccccc; */
+   }
