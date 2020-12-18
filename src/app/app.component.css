@@ -1,20 +1,22 @@
 
 .logo {
-    /* font-family: 'Russo One', sans-serif; */
-    font-family: 'Changa', sans-serif;
-    font-size: 50px;
+  /* font-family: 'Russo One', sans-serif; */
+  font-family: 'Changa', sans-serif;
+  font-size: 50px;
 }
 
-a {
-    color: rgb(196, 176, 0);
-    text-decoration: none;
-  }
+a 
+{
+  color: rgb(196, 176, 0);
+  text-decoration: none;
+}
 
-  a:hover {
-    color:rgb(109, 109, 109)
-  }
+a:hover {
+  color:rgb(109, 109, 109)
+}
 
-  body {
-    background-image: url("../assets/img/background2.png");
-    /* background-color: #cccccc; */
-   }
+body {
+  background-image: url("../assets/img/background2.png");
+  /* background-color: #cccccc; */
+  background-repeat: repeat;
+}
