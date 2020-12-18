@@ -12,30 +12,3 @@
 <div>
     <app-movie-list-helper *ngFor="let movie of movies" [movie]="movie"></app-movie-list-helper>
 </div>
-
-<!-- <div>
-    <nav>
-        <a routerLink="/specificMovie" routerLinkActive="active">
-            <h3>
-                {{movie.title}}                                      {{movie.vote_average}}/10
-            </h3>
-            <img [src]="imageBaseURL + movie.poster_path">
-            <button type="button" class="btn btn-info" (click)="checkOutMovie()">More Info</button>
-        </a>    
-    </nav>
-</div> -->
-<!-- <h2>HEROES</h2>
-<p>Get your heroes here</p>
-<button routerLink="/sidekicks">Go to sidekicks</button> -->
-
-
-<!-- <div *ngIf="movieChosen">
-    <h3>Chosen Movie: {{movie.title}}</h3>
-    <img [src]="imageBaseURL + movie.poster_path">
-
-</div> -->
-
-
-<!-- <router-outlet></router-outlet> -->
-
-
